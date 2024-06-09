@@ -11,3 +11,4 @@ gem 'jekyll-feed', group: :jekyll_plugins
 gem 'jekyll'
 gem 'webrick'
 gem 'netrc'
+gem 'csv'

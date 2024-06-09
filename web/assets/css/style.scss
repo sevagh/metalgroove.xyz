@@ -8,65 +8,54 @@ pre, code {
     box-sizing: border-box;
 }
 
-
 header {
   box-sizing: border-box;
   /*width: max-content;*/
   width: 100%;
+  border-bottom: 2px solid #ff0000; /* Red separator */
+  padding-bottom: 10px; /* Adjust the padding as needed */
 }
 
 body {
-    background: #e0ffff; /* Light Cyan */
-    color: #c71585; /* Medium Violet Red (a more readable variant of Magenta) */
+    background: #000000; /* Black */
+    color: #ff0000; /* Red */
     font-family: Arial, sans-serif;
 }
 
 header h1 {
-    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+    color: #ff4500; /* Orange Red, to give headings a bit more contrast */
 }
 
 header h2 {
-    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+    color: #ff4500; /* Orange Red, to give headings a bit more contrast */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+    color: #ff4500; /* Orange Red, to give headings a bit more contrast */
 }
 
 .tag-heading {
-  color: #8b008b; /* Dark Magenta, same as your other headings */
-  //font-weight: bold; /* for a bold appearance like headings */
-  //font-size: 1.2em; /* adjust the size if needed */
+    color: #ff4500; /* Orange Red, same as your other headings */
+    /* font-weight: bold; /* for a bold appearance like headings */
+    /* font-size: 1.2em; /* adjust the size if needed */
 }
 
 a {
-    color: #8b008b; /* Dark Magenta */
+    color: #ff0000; /* Red */
 }
 
 a:hover {
-    color: #c71585; /* Medium Violet Red */
+    color: #ff6347; /* Tomato Red */
 }
 
 header h1:before {
-  content: "";
-  font-size: 24px;
-  color: #8b008b;
+    content: "";
+    font-size: 24px;
+    color: #ff4500;
 }
 
-.btn-github {
-  color: #ceeeee; /* Changed to white for better contrast */
-  background: #961996; /* Softer shade of magenta */
-  //text-shadow: none; /* Removed text shadow for clarity */
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-
-.btn-github:hover {
-  color: #ceeeee; /* Changed to white for better contrast */
-  background: #6f006f; /* A darker shade for hover */
+hr {
+    border: 1px solid #ff0000; /* Red */
 }
 
 .card-container {
@@ -125,237 +114,4 @@ img.responsive-img {
 
 div.image-container {
   text-align: center;
-}
-
-.btn-gold-github {
-  color: #000000; /* Changed to black for better contrast */
-  background: #fdd835; /* A bright yellow instead of gold */
-  animation: goldpulse 2s infinite;
-  box-shadow: none; /* Optional: remove shadow for a flatter appearance */
-  text-shadow: none; /* Optional: remove shadow for a flatter appearance */
-}
-
-.btn-gold-github:hover {
-  background: #fbc02d; /* A slightly darker shade for hover */
-  color: black;
-  animation: none;
-}
-
-@keyframes goldpulse {
-  0% {
-    box-shadow: 0 0 5px #d1b000;
-    transform: scale(1);
-    background-color: #fbc02d;
-  }
-  50% {
-    box-shadow: 0 0 15px #d1b000; /* Increase the glow size and change color */
-    transform: scale(1.05); /* Slightly increase the scale for emphasis */
-    background-color: #fbc02d;
-  }
-  100% {
-    box-shadow: 0 0 5px #d1b000;
-    transform: scale(1);
-    background-color: #fbc02d;
-  }
-}
-
-.btn-karaoke-github {
-  color: #ffffff; /* White text for strong contrast */
-  background: #4b0082; /* Indigo color */
-  box-shadow: none; /* Optional: remove shadow for a flatter appearance */
-  text-shadow: none; /* Optional: remove shadow for a flatter appearance */
-}
-
-.btn-karaoke-github:hover {
-  background: #3a006d; /* A slightly darker shade for hover */
-  color: #ffffff; /* Maintain white text on hover */
-  animation: none;
-}
-
-.btn-github, .btn-gold-github, .btn-karaoke-github {
-  font-size: 15px;
-}
-
-/* Media query for different screens */
-
-/* For very large screens or default styles */
-@media (min-width: 1200px) {
-  .wrapper {
-    justify-content: center;
-  }
-
-  .container {
-    max-width: 52%; /* Adjust based on your preferred content width */
-  }
-
-  .banner-left {
-    flex-shrink: 0; /* Prevents the banner from shrinking */
-  }
-}
-
-/* For large screens, between 1025px and 1500px */
-@media (min-width: 1025px) and (max-width: 1500px) {
-  .banner-left {
-    width: 136px; /* 85% of 160px */
-    margin-right: 10px;
-  }
-}
-
-/* For medium screens, between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .banner-left {
-    width: 120px; /* 75% of 160px */
-    margin-right: 10px;
-  }
-}
-
-/* For small screens (tablets) and larger, starting at 768px */
-@media (min-width: 768px) {
-  div.demo-container {
-    width: 50%; /* Width for larger screens */
-  }
-
-  img.responsive-img {
-    width: 50%; /* Width for larger screens */
-  }
-}
-
-/* For devices up to 768px wide */
-@media (max-width: 768px) {
-  .banner-left {
-    width: 104px; /* 65% of 160px */
-    margin-right: 10px;
-  }
-  .post1-header {
-    width: calc(100vw + 20px);
-  }
-  .terminal {
-    width: 100px;
-  }
-  .index-header {
-    width: calc(100vw + 40px);
-  }
-  .karaoke-header {
-    width: calc(100vw + 20px);
-  }
-}
-
-/* For larger phones, up to 568px wide */
-@media (max-width: 568px) {
-  #popup-banner {
-    width: 80%; /* Slightly larger width than for the smallest screens */
-    /* Other styles as necessary */
-  }
-}
-
-/* For medium-sized devices, up to 512px wide */
-@media (max-width: 512px) {
-  .card-container {
-    flex-direction: column;
-  }
-  #popup-banner {
-    width: 90%;
-    img {
-      height: 206px; /* Adjust the image height */
-    }
-  }
-}
-
-/* For small devices, up to 500px wide */
-@media (max-width: 500px) {
-  .banner-left {
-    width: 88px; /* 55% of 160px */
-    margin-right: 10px;
-  }
-  .post1-header {
-    width: calc(100vw + 40px);
-  }
-  #load-weights-2 {
-    top: 20%;
-  }
-  #sign-up {
-    top: 40%;
-  }
-  #popup-banner {
-    width: 90%;
-    img {
-      height: 196px; /* Adjust the image height */
-    }
-  }
-}
-
-/* For even smaller devices, up to 400px wide */
-@media (max-width: 400px) {
-  .banner-left {
-    width: 88px; /* 55% of 160px */
-    margin-right: 10px;
-  }
-  .post1-header {
-    width: calc(100vw + 50px);
-  }
-  #popup-banner {
-    width: 90%; /* Reduce width to 90% of the screen size */
-    /* Adjust the font size for all child paragraphs */
-    /* Adjust the height of the image for smaller screens */
-    img {
-      height: 186px; /* Adjust the image height */
-    }
-  }
-}
-
-/* For the smallest screens, up to 350px wide */
-@media (max-width: 350px) {
-  .index-header {
-    width: calc(100vw + 15px);
-  }
-  .karaoke-header {
-    width: calc(100vw + 10px);
-  }
-  .post1-header {
-    width: calc(100vw + 50px);
-  }
-  .terminal {
-    width: 90px;
-  }
-  #load-weights-2 {
-    top: 20%;
-  }
-  #sign-up {
-    top: 30%;
-  }
-  #popup-banner {
-    width: 90%; /* Reduce width to 90% of the screen size */
-    /* Adjust the font size for all child paragraphs */
-    /* Adjust the height of the image for smaller screens */
-    img {
-      height: 156px; /* Adjust the image height */
-    }
-  }
-}
-
-/* For the narrowest phones, up to 320px wide */
-@media (max-width: 320px) { /* iPhone SE width */
-  #popup-banner {
-    width: 90%; /* Reduce width to 90% of the screen size */
-    /* Adjust the font size for all child paragraphs */
-    .pro-cta {
-      font-size: 18px;
-    }
-    .pro-promo {
-      font-size: 14px;
-    }
-    .pro-signup-cta {
-      font-size: 12px;
-    }
-    /* Adjust the height of the image for smaller screens */
-    img {
-      height: 146px; /* Adjust the image height */
-    }
-  }
-  .index-header {
-    width: calc(100vw + 120px);
-  }
-  .karaoke-header {
-    width: calc(100vw + 80px);
-  }
 }

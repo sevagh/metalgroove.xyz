@@ -1,0 +1,361 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+pre, code {
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+
+header {
+  box-sizing: border-box;
+  /*width: max-content;*/
+  width: 100%;
+}
+
+body {
+    background: #e0ffff; /* Light Cyan */
+    color: #c71585; /* Medium Violet Red (a more readable variant of Magenta) */
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+}
+
+header h2 {
+    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8b008b; /* Dark Magenta, to give headings a bit more contrast */
+}
+
+.tag-heading {
+  color: #8b008b; /* Dark Magenta, same as your other headings */
+  //font-weight: bold; /* for a bold appearance like headings */
+  //font-size: 1.2em; /* adjust the size if needed */
+}
+
+a {
+    color: #8b008b; /* Dark Magenta */
+}
+
+a:hover {
+    color: #c71585; /* Medium Violet Red */
+}
+
+header h1:before {
+  content: "";
+  font-size: 24px;
+  color: #8b008b;
+}
+
+.btn-github {
+  color: #ceeeee; /* Changed to white for better contrast */
+  background: #961996; /* Softer shade of magenta */
+  //text-shadow: none; /* Removed text shadow for clarity */
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.btn-github:hover {
+  color: #ceeeee; /* Changed to white for better contrast */
+  background: #6f006f; /* A darker shade for hover */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between cards */
+  justify-content: left;
+  padding: 0px 20px 20px 0px; /* Space around the cards */
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: auto; /* Adjust as necessary */
+  margin: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-blue, .card-gold {
+  color: white; /* White text for both card types for better contrast */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-blue {
+  background-color: rgba(0, 64, 128, 1.0);
+}
+
+.card-gold {
+  background-color: #fbc02d;
+  color: black; /* Black text for better contrast */
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content p {
+  margin: 0px 0; /* Reduced margin for less vertical space between p and audio */
+}
+
+audio {
+  //width: 100%; /* Make audio player full width of card */
+  margin-top: 0px; /* Reduced spacing above audio player */
+  margin-bottom: 0px; /* Reduced spacing below audio player */
+}
+
+/* Base styles for the image */
+img.responsive-img {
+  width: 100%; /* default width for mobile devices */
+}
+
+div.image-container {
+  text-align: center;
+}
+
+.btn-gold-github {
+  color: #000000; /* Changed to black for better contrast */
+  background: #fdd835; /* A bright yellow instead of gold */
+  animation: goldpulse 2s infinite;
+  box-shadow: none; /* Optional: remove shadow for a flatter appearance */
+  text-shadow: none; /* Optional: remove shadow for a flatter appearance */
+}
+
+.btn-gold-github:hover {
+  background: #fbc02d; /* A slightly darker shade for hover */
+  color: black;
+  animation: none;
+}
+
+@keyframes goldpulse {
+  0% {
+    box-shadow: 0 0 5px #d1b000;
+    transform: scale(1);
+    background-color: #fbc02d;
+  }
+  50% {
+    box-shadow: 0 0 15px #d1b000; /* Increase the glow size and change color */
+    transform: scale(1.05); /* Slightly increase the scale for emphasis */
+    background-color: #fbc02d;
+  }
+  100% {
+    box-shadow: 0 0 5px #d1b000;
+    transform: scale(1);
+    background-color: #fbc02d;
+  }
+}
+
+.btn-karaoke-github {
+  color: #ffffff; /* White text for strong contrast */
+  background: #4b0082; /* Indigo color */
+  box-shadow: none; /* Optional: remove shadow for a flatter appearance */
+  text-shadow: none; /* Optional: remove shadow for a flatter appearance */
+}
+
+.btn-karaoke-github:hover {
+  background: #3a006d; /* A slightly darker shade for hover */
+  color: #ffffff; /* Maintain white text on hover */
+  animation: none;
+}
+
+.btn-github, .btn-gold-github, .btn-karaoke-github {
+  font-size: 15px;
+}
+
+/* Media query for different screens */
+
+/* For very large screens or default styles */
+@media (min-width: 1200px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 52%; /* Adjust based on your preferred content width */
+  }
+
+  .banner-left {
+    flex-shrink: 0; /* Prevents the banner from shrinking */
+  }
+}
+
+/* For large screens, between 1025px and 1500px */
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .banner-left {
+    width: 136px; /* 85% of 160px */
+    margin-right: 10px;
+  }
+}
+
+/* For medium screens, between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-left {
+    width: 120px; /* 75% of 160px */
+    margin-right: 10px;
+  }
+}
+
+/* For small screens (tablets) and larger, starting at 768px */
+@media (min-width: 768px) {
+  div.demo-container {
+    width: 50%; /* Width for larger screens */
+  }
+
+  img.responsive-img {
+    width: 50%; /* Width for larger screens */
+  }
+}
+
+/* For devices up to 768px wide */
+@media (max-width: 768px) {
+  .banner-left {
+    width: 104px; /* 65% of 160px */
+    margin-right: 10px;
+  }
+  .post1-header {
+    width: calc(100vw + 20px);
+  }
+  .terminal {
+    width: 100px;
+  }
+  .index-header {
+    width: calc(100vw + 40px);
+  }
+  .karaoke-header {
+    width: calc(100vw + 20px);
+  }
+}
+
+/* For larger phones, up to 568px wide */
+@media (max-width: 568px) {
+  #popup-banner {
+    width: 80%; /* Slightly larger width than for the smallest screens */
+    /* Other styles as necessary */
+  }
+}
+
+/* For medium-sized devices, up to 512px wide */
+@media (max-width: 512px) {
+  .card-container {
+    flex-direction: column;
+  }
+  #popup-banner {
+    width: 90%;
+    img {
+      height: 206px; /* Adjust the image height */
+    }
+  }
+}
+
+/* For small devices, up to 500px wide */
+@media (max-width: 500px) {
+  .banner-left {
+    width: 88px; /* 55% of 160px */
+    margin-right: 10px;
+  }
+  .post1-header {
+    width: calc(100vw + 40px);
+  }
+  #load-weights-2 {
+    top: 20%;
+  }
+  #sign-up {
+    top: 40%;
+  }
+  #popup-banner {
+    width: 90%;
+    img {
+      height: 196px; /* Adjust the image height */
+    }
+  }
+}
+
+/* For even smaller devices, up to 400px wide */
+@media (max-width: 400px) {
+  .banner-left {
+    width: 88px; /* 55% of 160px */
+    margin-right: 10px;
+  }
+  .post1-header {
+    width: calc(100vw + 50px);
+  }
+  #popup-banner {
+    width: 90%; /* Reduce width to 90% of the screen size */
+    /* Adjust the font size for all child paragraphs */
+    /* Adjust the height of the image for smaller screens */
+    img {
+      height: 186px; /* Adjust the image height */
+    }
+  }
+}
+
+/* For the smallest screens, up to 350px wide */
+@media (max-width: 350px) {
+  .index-header {
+    width: calc(100vw + 15px);
+  }
+  .karaoke-header {
+    width: calc(100vw + 10px);
+  }
+  .post1-header {
+    width: calc(100vw + 50px);
+  }
+  .terminal {
+    width: 90px;
+  }
+  #load-weights-2 {
+    top: 20%;
+  }
+  #sign-up {
+    top: 30%;
+  }
+  #popup-banner {
+    width: 90%; /* Reduce width to 90% of the screen size */
+    /* Adjust the font size for all child paragraphs */
+    /* Adjust the height of the image for smaller screens */
+    img {
+      height: 156px; /* Adjust the image height */
+    }
+  }
+}
+
+/* For the narrowest phones, up to 320px wide */
+@media (max-width: 320px) { /* iPhone SE width */
+  #popup-banner {
+    width: 90%; /* Reduce width to 90% of the screen size */
+    /* Adjust the font size for all child paragraphs */
+    .pro-cta {
+      font-size: 18px;
+    }
+    .pro-promo {
+      font-size: 14px;
+    }
+    .pro-signup-cta {
+      font-size: 12px;
+    }
+    /* Adjust the height of the image for smaller screens */
+    img {
+      height: 146px; /* Adjust the image height */
+    }
+  }
+  .index-header {
+    width: calc(100vw + 120px);
+  }
+  .karaoke-header {
+    width: calc(100vw + 80px);
+  }
+}

@@ -58,49 +58,6 @@ hr {
     border: 1px solid #ff0000; /* Red */
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* space between cards */
-  justify-content: left;
-  padding: 0px 20px 20px 0px; /* Space around the cards */
-}
-
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: auto; /* Adjust as necessary */
-  margin: 10px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.card-blue, .card-gold {
-  color: white; /* White text for both card types for better contrast */
-}
-
-.card-content {
-  padding: 16px;
-}
-
-.card-blue {
-  background-color: rgba(0, 64, 128, 1.0);
-}
-
-.card-gold {
-  background-color: #fbc02d;
-  color: black; /* Black text for better contrast */
-}
-
-.card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-content p {
-  margin: 0px 0; /* Reduced margin for less vertical space between p and audio */
-}
-
 audio {
   //width: 100%; /* Make audio player full width of card */
   margin-top: 0px; /* Reduced spacing above audio player */

@@ -3,34 +3,91 @@ keywords: metal, groove, beats, beat tracking, tempo, beat, drums, percussion, p
 description: "What makes metal groove? An exploration of beat tracking, tempo estimation, percussive source separation, and various music analysis algorithms for rhythm."
 ---
 
-_Hint: this is not a rigorous academic website, unlike some of my other projects. This is written from the heart and correctness is an irrelevant measure for my love of metal. This is an homage to the contents of my soul._
-
 # What makes Metal Groove?
 
-I'm [Sevag](https://github.com/sevagh), and for many years I've been obsessed with metal, the genre of music. The best part about metal is the moments of unanimous consensus on a groove: when the entire crowd devolves into a wall of death, when you just cannot help but be compelled to motion by something larger than just the beat or time signature, but this almost immeasurable quality called _groove_.
+I'm Sevag and I love metal. This page showcases a collection of my loosely-related projects in the pursuit of the analysis of groove and rhythm in metal music. See my [open-source portfolio](https://github.com/sevagh) and my [personal website](https://sevag.xyz) for any inquiries.
+<br style="line-height:0px;" />
 
-Throughout the program of my [Master of Arts in Music Technology](https://sevag.xyz/academic), I explored different aspects of this obsession:
+## Motion and percussion-aligned beat tracking
 
-* Could I write code that could predict headbangs that agreed with my own instinct?
-* What measures of audio analysis corresponded to headbanging?
-* What are the different aspects of rhythm, beats, and tempo, and how can I create useful tooling based on what exist in the world?
+headbang.py: [site](https://sevagh.github.io/headbang.py), [repo](https://github.com/sevagh/headbang.py)
 
-## Auditory consensus beat tracking
+Calculating groove from tempo agreement between auditory beat and motion tempo of drummer's right arm:
+{% include embed-video.html src="assets/video/anup_sastry_pose.webm" %}
 
-(headbang.py)
+Calculating groove from tempo agreement between auditory beat and motion of guitarist's head:
+{% include embed-video.html src="assets/video/bb_short.webm" %}
 
-## Pose estimation and analysis of human motion
+Motion-aligned beat tracking:
+{% include embed-audio.html src="assets/audio/anup_sastry.ogg" %}
 
-(headbang.py)
+Percussion/onset-aligned beat tracking:
+{% include embed-audio.html src="assets/audio/badthing_hbt.ogg" %}
 
-## Polyrhythms, a fancy metronome, and a drum track generator
+<div style="height:20px;font-size:1px;">&nbsp;</div>
 
-(libmetro, drum_machine)
+## Polyrhythmic metronome and a drum machine
 
-## Animation driven by beat and tempo
+Libmetro: [site](https://sevagh.github.io/libmetro), [repo](https://github.com/sevagh/libmetro)
 
-(electropartyogram, btrack)
+C++ metronome library for creating arbitrary click tracks with support for polyrhythm and multiple representations, using [STK](https://github.com/thestk/stk) for drum sound synthesis:
 
-## Source separation and transient shapers
+Intuitive format for a 5/3 beat:
+```
+1 0 0 1 0 0 1 0 0 1 0 0 1 0 0
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+```
+Audio:
+{% include embed-audio.html src="assets/audio/poly_53.ogg" %}
 
-umx.cpp, demucs.cpp, zen, realtime-hpss, multi-band transient shaper
+A beat given to me by a jazz vibrophonist: 3/5, 5 as a swing pattern
+```
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1
+```
+Audio:
+{% include embed-audio.html src="assets/audio/poly_35_swing.ogg" %}
+
+drum_machine ([repo](https://github.com/sevagh/drum_machine)): Go wrapper for libmetro to generate metronomes from the rhythm information for songs in the [Harmonix Set](https://github.com/urinieto/harmonixset)
+
+<div style="height:20px;font-size:1px;">&nbsp;</div>
+
+## Beat-driven visual animation on Android
+
+ElectroPARTYogram: [repo](https://github.com/sevagh/ElectroPARTYogram)
+
+Tempo and beat-driven animation in an Android app, powered by [BTrack](https://github.com/adamstark/BTrack) and animated with [SFML](https://www.sfml-dev.org/), with visualization intensity influenced by onset strength:
+{% include embed-video.html src="assets/video/animals_as_leaders_the_woven_web.webm" %}
+<div style="height:20px;font-size:1px;">&nbsp;</div>
+
+## Practice your groove with Music Demixer
+
+"Music Demixer" is a collection of my free and paid websites and Android app that offer high-quality AI-powered stem separation (aka music demixing) that run privately and offline on your devices:
+* Free site: <https://freemusicdemixer.com>
+* Pro/paid site: <https://pro.freemusicdemixer.com>
+* Android app: <https://play.google.com/store/apps/details?id=com.freemusicdemixer.pro>
+
+Video showing how I use the app to practice metal (Monuments):
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uDUq8kOljKk?si=jYyfUDgqfh0FdPqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Samples of the high quality stems of the Pro Deluxe model when applied to a Periphery song.
+
+Bass:
+{% include embed-audio.html src="assets/audio/bass_pro.ogg" %}
+
+Drums:
+{% include embed-audio.html src="assets/audio/drums_pro.ogg" %}
+
+Vocals:
+{% include embed-audio.html src="assets/audio/vocals_pro.ogg" %}
+<div style="height:20px;font-size:1px;">&nbsp;</div>
+
+## Other source separation and percussion enhancement
+
+While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides my "Music Demixer" product, here's a list of other related projects:
+* Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
+* Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
+* Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)
+* Custom source separation AI models: [MiXiN](https://github.com/sevagh/MiXiN), [xumx-sliCQ](https://github.com/sevagh/xumx-sliCQ)
+* Custom C++ inference for PyTorch source separation models: [umx.cpp](https://github.com/sevagh/umx.cpp), [demucs.cpp](https://github.com/sevagh/demucs.cpp)
+

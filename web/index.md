@@ -5,9 +5,7 @@ description: "What makes metal groove? An exploration of beat tracking, tempo es
 
 # What makes Metal Groove?
 
-I'm Sevag, I love metal.
-
-This page showcases a collection of my loosely-related projects in the pursuit of the analysis of groove and rhythm in metal music. See my [open-source portfolio](https://github.com/sevagh) and my [personal website](https://sevag.xyz) for any inquiries.
+I'm Sevag and I love metal. This page showcases a collection of my loosely-related projects in the pursuit of the analysis of groove and rhythm in metal music. See my [open-source portfolio](https://github.com/sevagh) and my [personal website](https://sevag.xyz) for any inquiries.
 <br style="line-height:0px;" />
 
 ## Motion and percussion-aligned beat tracking

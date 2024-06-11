@@ -30,6 +30,29 @@ Percussion/onset-aligned beat tracking:
 
 ## Polyrhythmic metronome and a drum machine
 
+Libmetro: [site](https://sevagh.github.io/libmetro), [repo](https://github.com/sevagh/libmetro)
+
+C++ metronome library for creating arbitrary click tracks with support for polyrhythm and multiple representations, using [STK](https://github.com/thestk/stk) for drum sound synthesis:
+
+Intuitive format for a 5/3 beat:
+```
+1 0 0 1 0 0 1 0 0 1 0 0 1 0 0
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+```
+Audio:
+{% include embed-audio.html src="assets/audio/poly_53.ogg" %}
+
+A beat given to me by a jazz vibrophonist: 3/5, 5 as a swing pattern
+```
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1
+```
+Audio:
+{% include embed-audio.html src="assets/audio/poly_35_swing.ogg" %}
+
+drum_machine ([repo](https://github.com/sevagh/drum_machine)): Go wrapper for libmetro to generate metronomes from the rhythm information for songs in the [Harmonix Set](https://github.com/urinieto/harmonixset)
+
+<div style="height:20px;font-size:1px;">&nbsp;</div>
 
 ## Beat-driven visual animation on Android
 
@@ -39,7 +62,9 @@ Tempo and beat-driven animation in an Android app, powered by [BTrack](https://g
 {% include embed-video.html src="assets/video/animals_as_leaders_the_woven_web.webm" %}
 <div style="height:20px;font-size:1px;">&nbsp;</div>
 
-## music demixer promo here
+## Music demixer, stem, and source separation
+
+Music Demixer
 
 ## Source separation and percussion enhancement utilities
 

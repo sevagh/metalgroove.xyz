@@ -62,21 +62,31 @@ Tempo and beat-driven animation in an Android app, powered by [BTrack](https://g
 {% include embed-video.html src="assets/video/animals_as_leaders_the_woven_web.webm" %}
 <div style="height:20px;font-size:1px;">&nbsp;</div>
 
-## Music demixer, stem, and source separation
+## Practice your groove with Music Demixer
 
-Music Demixer
+"Music Demixer" is a collection of my free and paid websites and Android app that offer high-quality AI-powered stem separation (aka music demixing) that run privately and offline on your devices:
+* Free site: <https://freemusicdemixer.com>
+* Pro/paid site: <https://pro.freemusicdemixer.com>
+* Android app: <https://play.google.com/store/apps/details?id=com.freemusicdemixer.pro>
 
-## Source separation and percussion enhancement utilities
+Video showing how I use the app to practice metal (Monuments):
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uDUq8kOljKk?si=jYyfUDgqfh0FdPqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-* "Music Demixer", my free and paid websites and Android app that offer private, offline Demucs:
-    * <https://freemusicdemixer.com>
-    * <https://pro.freemusicdemixer.com>
-    * <https://play.google.com/store/apps/details?id=com.freemusicdemixer.pro>
+Samples of the high quality stems of the Pro Deluxe model when applied to a Periphery song.
 
-Here are some samples of the very high quality source separation performance of my Pro Deluxe model applied to a Periphery song:
+Bass:
+{% include embed-audio.html src="assets/audio/bass_pro.ogg" %}
 
-While working on headbang.py, I dug deep into the field of source separation (aka stem separation, music demixing, stem isolation). While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis.
+Drums:
+{% include embed-audio.html src="assets/audio/drums_pro.ogg" %}
 
+Vocals:
+{% include embed-audio.html src="assets/audio/vocals_pro.ogg" %}
+<div style="height:20px;font-size:1px;">&nbsp;</div>
+
+## Other source separation and percussion enhancement
+
+While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides my "Music Demixer" product, here's a list of other related projects:
 * Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
 * Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
 * Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)

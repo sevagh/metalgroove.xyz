@@ -7,7 +7,7 @@ plugins:
 favicon: assets/favicon.ico
 
 # dont mess with SEO here
-human_description: "What makes metal groove? An exploration of beat tracking, tempo estimation, percussive source separation, and various music analysis algorithms for rhythm."
+human_description: "Beat tracking, tempo estimation, percussive source separation, and other music analysis tools for rhythm in metal music."
 description: ""
 
 url: "https://metalgroove.xyz"

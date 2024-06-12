@@ -1,9 +1,7 @@
 ---
 keywords: metal, groove, beats, beat tracking, tempo, beat, drums, percussion, percussive, headbang, rhythm, metronome, polyrhythm, multimeter
-description: "What makes metal groove? An exploration of beat tracking, tempo estimation, percussive source separation, and various music analysis algorithms for rhythm."
+description: "Beat tracking, tempo estimation, percussive source separation, and other music analysis tools for rhythm in metal music."
 ---
-
-# What makes Metal Groove?
 
 I'm Sevag and I love metal. This page showcases a collection of my loosely-related projects in the pursuit of the analysis of groove and rhythm in metal music. See my [open-source portfolio](https://github.com/sevagh) and my [personal website](https://sevag.xyz) for any inquiries.
 <br style="line-height:0px;" />
@@ -80,6 +78,12 @@ Drums:
 
 Vocals:
 {% include embed-audio.html src="assets/audio/vocals_pro.ogg" %}
+<div style="height:20px;font-size:1px;">&nbsp;</div>
+
+## Fake AI metal artist
+
+In 2020, I created 1000sharks.xyz ([site](https://1000sharks.xyz), [repo](https://github.com/sevagh/1000sharks.xyz)), a fake metal band trained on Animals as Leaders and Cannibal Corpse:
+<iframe width="777px" height="300px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1158301087&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-167126026" title="sevagh" target="_blank" style="color: #cccccc; text-decoration: none;">sevagh</a> · <a href="https://soundcloud.com/user-167126026/sets/1000sharks-ai-generated-metal" title="1000sharks - AI-generated metal" target="_blank" style="color: #cccccc; text-decoration: none;">1000sharks - AI-generated metal</a></div>
 <div style="height:20px;font-size:1px;">&nbsp;</div>
 
 ## Other source separation and percussion enhancement

@@ -61,9 +61,8 @@ Tempo and beat-driven animation in an Android app, powered by [BTrack](https://g
 ## Practice your groove with Music Demixer
 
 "Music Demixer" is a collection of my free and paid websites and Android app that offer high-quality AI-powered stem separation (aka music demixing) that run privately and offline on your devices:
-* Free site: <https://freemusicdemixer.com>
-* Pro/paid site: <https://pro.freemusicdemixer.com>
-* Android app: <https://play.google.com/store/apps/details?id=com.freemusicdemixer.pro>
+* Web site: <https://freemusicdemixer.com>
+* Android app: <https://freemusicdemixer.com/android>
 
 Video showing how I use the app to practice metal (Monuments):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uDUq8kOljKk?si=jYyfUDgqfh0FdPqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

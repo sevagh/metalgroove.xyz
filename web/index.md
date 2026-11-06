@@ -58,11 +58,9 @@ Tempo and beat-driven animation in an Android app, powered by [BTrack](https://g
 {% include embed-video.html src="assets/video/animals_as_leaders_the_woven_web.webm" %}
 <div style="height:20px;font-size:1px;">&nbsp;</div>
 
-## Practice your groove with Music Demixer
+## Practice your groove with demucs-android
 
-My current product is [Music Demixer](https://musicdemixer.com), an online tool for musicians.
-
-Video showing how I used my Android app to practice metal (Monuments). The app is open source as [demucs-android](https://github.com/sevagh/demucs-android), built on [demucs.cpp](https://github.com/sevagh/demucs.cpp):
+Video showing how I used my Android app, [demucs-android](https://github.com/sevagh/demucs-android) (built on [demucs.cpp](https://github.com/sevagh/demucs.cpp)), to practice metal (Monuments):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uDUq8kOljKk?si=jYyfUDgqfh0FdPqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <div style="height:20px;font-size:1px;">&nbsp;</div>
@@ -75,7 +73,7 @@ In 2020, I created 1000sharks.xyz ([site](https://1000sharks.xyz), [repo](https:
 
 ## Other source separation and percussion enhancement
 
-While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides my "Music Demixer" product, here's a list of other related projects:
+While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides [Music Demixer](https://musicdemixer.com), my online tool for musicians, here's a list of other related projects:
 * Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
 * Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
 * Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)

@@ -73,7 +73,7 @@ In 2020, I created 1000sharks.xyz ([site](https://1000sharks.xyz), [repo](https:
 
 ## Other source separation and percussion enhancement
 
-While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides [Music Demixer](https://musicdemixer.com), my online tool for musicians, here's a list of other related projects:
+While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides Music Demixer (<https://musicdemixer.com>), my online tool for musicians, here's a list of other related projects:
 * Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
 * Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
 * Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)

@@ -102,15 +102,12 @@ In 2020, I created 1000sharks.xyz ([site](https://1000sharks.xyz), [repo](https:
 While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Here's a list of my related open-source projects:
 * Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
 * Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
-* Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF), [mss-oracle-experiments](https://github.com/sevagh/mss-oracle-experiments)
+* Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)
 * Custom source separation AI models: [MiXiN](https://github.com/sevagh/MiXiN), [xumx-sliCQ](https://github.com/sevagh/xumx-sliCQ)
 * Custom C++ inference for PyTorch source separation models: [umx.cpp](https://github.com/sevagh/umx.cpp), [demucs.cpp](https://github.com/sevagh/demucs.cpp), [demucs.onnx](https://github.com/sevagh/demucs.onnx)
 * A stem dataset for music demixing research: [OnAir-Music-Dataset](https://github.com/sevagh/OnAir-Music-Dataset), with the [onair-py](https://github.com/sevagh/onair-py) loader
 
-### Pitch, transcription and other audio tools
+### Pitch detection and transcription
 
-* Pitch detection: [pitch-detection](https://github.com/sevagh/pitch-detection), and realtime pitch tracking in the browser with [pitchlite](https://github.com/sevagh/pitchlite)
-* Music transcription to MIDI: [basicpitch.cpp](https://github.com/sevagh/basicpitch.cpp), [transcribe](https://github.com/sevagh/transcribe)
-* Audio degradations for testing music analysis: [audio-degradation-toolbox](https://github.com/sevagh/audio-degradation-toolbox)
-* A perceptual audio codec in a FLAC container: [warped-linear-prediction](https://github.com/sevagh/warped-linear-prediction)
-* A command-line music player: [surge](https://github.com/sevagh/surge)
+* Pitch detection: [pitch-detection](https://github.com/sevagh/pitch-detection)
+* Music transcription to MIDI: [basicpitch.cpp](https://github.com/sevagh/basicpitch.cpp)

@@ -60,23 +60,15 @@ Tempo and beat-driven animation in an Android app, powered by [BTrack](https://g
 
 ## Practice your groove with Music Demixer
 
-"Music Demixer" is a collection of my free and paid websites and Android app that offer high-quality AI-powered stem separation (aka music demixing) that run privately and offline on your devices:
-* Web site: <https://freemusicdemixer.com>
-* Android app: <https://freemusicdemixer.com/android>
+[Music Demixer](https://musicdemixer.com) is my online tool for musicians. These are the parts I use to learn and practice metal:
 
-Video showing how I use the app to practice metal (Monuments):
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uDUq8kOljKk?si=jYyfUDgqfh0FdPqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* [Click Track](https://musicdemixer.com/click-track): a click that follows the drummer's own timing, with the song split into stems. Mute the drums and play along with the click and the band, and take the tempo map into your DAW as MIDI.
+* [Drum separation](https://musicdemixer.com/drums): pull the drums out of a song, or split the kit into kick, snare, toms and cymbals to hear exactly what the drummer is playing.
+* [Drum MIDI](https://musicdemixer.com/drums): transcribe the drum part to MIDI and load it into your DAW or drum software.
+* [Guitar Tab](https://musicdemixer.com/guitar-tab) (beta): turn a riff into an editable Guitar Pro tab, in standard or drop tunings down to Drop C.
+* [Stem separation](https://musicdemixer.com/stem-separation): isolate the bass, guitar, vocals or drums to learn a part, or make your own backing track.
 
-Samples of the high quality stems of the Pro Deluxe model when applied to a Periphery song.
-
-Bass:
-{% include embed-audio.html src="assets/audio/bass_pro.ogg" %}
-
-Drums:
-{% include embed-audio.html src="assets/audio/drums_pro.ogg" %}
-
-Vocals:
-{% include embed-audio.html src="assets/audio/vocals_pro.ogg" %}
+You can preview one song for free.
 <div style="height:20px;font-size:1px;">&nbsp;</div>
 
 ## Fake AI metal artist
@@ -87,7 +79,7 @@ In 2020, I created 1000sharks.xyz ([site](https://1000sharks.xyz), [repo](https:
 
 ## Other source separation and percussion enhancement
 
-While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Besides my "Music Demixer" product, here's a list of other related projects:
+While not directly related to metal, groove, or rhythm, isolating the percussion in a song can be a key step in performing further percussion analysis. Here's a list of my related open-source projects:
 * Transient shaper/percussion enhancement: [multiband-transient-shaper](https://github.com/sevagh/multiband-transient-shaper)
 * Realtime harmonic-percussive source separation: [Real-Time-HPSS](https://github.com/sevagh/Real-Time-HPSS), [Zen](https://github.com/sevagh/Zen)
 * Analysis of simple and complex source separation algorithms from the angle of time-frequency: [Music-Separation-TF](https://github.com/sevagh/Music-Separation-TF)
